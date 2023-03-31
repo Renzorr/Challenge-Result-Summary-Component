@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- style -->
+    <link rel="stylesheet" href="/css/main.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="preloader"></div>
+    <h1 class="sr-only">Results Summary Component</h1>
+    <main class="card">
+      <section class="result">
+        <span class="result_span">Your Result</span>
+        <article class="score">
+          <span class="total">76</span>
+          <p>of 100</p>
+        </article>
+        <h2>Great</h2>
+        <p class="score_txt">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </section>
+      <section class="summary">
+        <h2 class="sum_title">Summary</h2>
+        <ul class="sum_list" id="list"></ul>
+        <button class="btn_continue">Continue</button>
+      </section>
+    </main>
+    <script src="/js/index.js"></script>
+    <script src="js/animation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+@use "../variables/variables" as v;
+
+.summary {
+  width: 52%;
+  padding: 45px 40px;
+
+  h2 {
+    font-size: 24px;
+    color: v.$dark-gray-blue;
+    margin-bottom: 22px;
+  }
+
+  .sum_list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .sum_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 18px;
+    border-radius: 10px;
+  }
+
+  .sum_item:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.08);
+  }
+
+  .sum_item:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.08);
+  }
+
+  .sum_item:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.08);
+  }
+
+  .sum_item:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.08);
+  }
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18.4px;
+
+    .red {
+      color: v.$light-red;
+    }
+    .yellow {
+      color: v.$orangey-yellow;
+    }
+    .green {
+      color: v.$green-teal;
+    }
+    .purple {
+      color: v.$cobalt-blue;
+    }
+  }
+
+  .total_score {
+    font-size: 18.4px;
+
+    p {
+      color: v.$dark-gray-blue;
+      font-weight: 600;
+    }
+
+    span {
+      opacity: 0.4;
+    }
+  }
+
+  .btn_continue {
+    position: relative;
+    font-size: 17.6px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 17px;
+    border-radius: 30px;
+    background: v.$dark-gray-blue;
+    color: v.$White;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: -100%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        180deg,
+        hsl(252, 94%, 63%) 0%,
+        rgba(46, 43, 233, 1) 100%
+      );
+      z-index: -1;
+      border-radius: 30px;
+      transition: 0.2s;
+    }
+
+    &:hover::before {
+      left: 0;
+    }
+  }
+}

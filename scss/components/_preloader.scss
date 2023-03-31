@@ -1,0 +1,11 @@
+@use "../variables/variables" as v;
+
+.preloader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  background: linear-gradient(100deg, v.$violet-blue, v.$light-slate-blue);
+  z-index: 9199;
+}

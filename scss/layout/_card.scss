@@ -1,0 +1,35 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 15px;
+}
+
+.card {
+  max-width: 100%;
+  width: 735px;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  box-shadow: 15px 15px 80px -25px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 830px) {
+  body {
+    overflow: visible;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+
+  .summary {
+    width: 100% !important;
+  }
+
+  .result {
+    width: 100% !important;
+  }
+}

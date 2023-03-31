@@ -2,7 +2,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   min-height: 100vh;
   padding: 15px;
 }
@@ -17,10 +16,6 @@ body {
 }
 
 @media (max-width: 830px) {
-  body {
-    overflow: visible;
-  }
-
   .card {
     flex-direction: column;
   }
